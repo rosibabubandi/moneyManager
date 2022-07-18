@@ -1,0 +1,297 @@
+.main-container {
+  background-color: #ffffff;
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-banner {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  width: 95%;
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-banner-heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+.top-banner-paragraph {
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+.top-banner-span-element {
+  font-family: 'Roboto';
+  color: #0b69ff;
+  font-weight: bold;
+}
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-left: 0px;
+}
+.form-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 1px solid #7e858e;
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-add-transaction-text {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: #1e293b;
+}
+.only-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+.form-label-styles {
+  font-family: 'Roboto';
+  color: #7e858e;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-input-element {
+  width: 90%;
+  border: 1px solid #7e858e;
+  padding: 20px;
+  height: 30px;
+  font-family: 'Roboto';
+  background-color: inherit;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+.select-dropdown-element {
+  width: 90%;
+  border: 1px solid #7e858e;
+  padding: 10px;
+  font-family: 'Roboto';
+  border-radius: 10px;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+.select-option-styles {
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+.add-button {
+  background-color: #0b69ff;
+  border-width: 0px;
+  height: 35px;
+  width: 75px;
+  border-radius: 7px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7px;
+  border: 1px solid #7e858e;
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.history-text {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: #1e293b;
+}
+.history-top-heads-container {
+  width: 330px;
+  border: 1px solid #7e858e;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+}
+.history-top-heads-styles {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 45px;
+}
+.history-ul-container {
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 767px) {
+  .main-container {
+    background-color: #ffffff;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-banner {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+    width: 95%;
+    background-size: cover;
+    text-align: left;
+  }
+  .top-banner-heading {
+    font-family: 'Roboto';
+    color: #1e293b;
+    text-align: left;
+  }
+  .top-banner-paragraph {
+    font-family: 'Roboto';
+    color: #1e293b;
+    text-align: left;
+  }
+  .top-banner-span-element {
+    font-family: 'Roboto';
+    color: #0b69ff;
+    font-weight: bold;
+  }
+  .money-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+  .form-history-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 1px solid #7e858e;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-right: 250px;
+    flex-grow: 1;
+  }
+  .form-add-transaction-text {
+    font-family: 'Roboto';
+    font-size: 32px;
+    color: #1e293b;
+  }
+  .only-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .form-label-styles {
+    font-family: 'Roboto';
+    color: #7e858e;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form-input-element {
+    width: 280px;
+    border: 1px solid #7e858e;
+    padding: 20px;
+    height: 30px;
+    font-family: 'Roboto';
+    background-color: inherit;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
+  .select-dropdown-element {
+    width: 280px;
+    border: 1px solid #7e858e;
+    padding: 10px;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
+  .select-option-styles {
+    font-family: 'Roboto';
+    color: #1e293b;
+  }
+  .add-button {
+    background-color: #0b69ff;
+    border-width: 0px;
+    height: 35px;
+    width: 75px;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    margin-top: 15px;
+  }
+  .history-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 7px;
+    border: 1px solid #7e858e;
+    border-radius: 10px;
+    min-width: 400px;
+    max-width: 480px;
+    margin-top: 10px;
+    flex-grow: 1;
+  }
+  .history-text {
+    font-family: 'Roboto';
+    font-size: 32px;
+    color: #1e293b;
+  }
+  .history-top-heads-container {
+    max-width: 450px;
+    min-width: 370px;
+    border: 1px solid #7e858e;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+  }
+  .history-top-heads-styles {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 45px;
+  }
+  .history-ul-container {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+}

@@ -24,7 +24,7 @@ class MoneyManager extends Component {
     transactionsList: initialTransactionsList,
     title: '',
     amount: '',
-    transactionType: transactionTypeOptions[0].displayText,
+    transactionType: transactionTypeOptions[0].optionId,
   }
 
   onAddTitle = event => {
@@ -37,13 +37,7 @@ class MoneyManager extends Component {
   }
 
   onAddType = event => {
-    let type = ''
-    if (event.target.value === 'INCOME') {
-      type = 'Income'
-    } else {
-      type = 'Expenses'
-    }
-    this.setState({transactionType: type})
+    this.setState({transactionType: event.target.value})
   }
 
   onAddTransaction = event => {
@@ -63,7 +57,7 @@ class MoneyManager extends Component {
         transactionsList: [...prevState.transactionsList, newTransaction],
         title: '',
         amount: '',
-        transactionType: transactionTypeOptions[0].displayText,
+        transactionType: transactionTypeOptions[0].optionId,
       }))
     }
   }
@@ -98,25 +92,25 @@ class MoneyManager extends Component {
               className="only-form-container"
               onSubmit={this.onAddTransaction}
             >
-              <label htmlFor="transactionTitle" className="form-label-styles">
+              <label htmlFor="titleInput" className="form-label-styles">
                 TITLE
               </label>
               <input
                 value={title}
                 onChange={this.onAddTitle}
                 type="text"
-                id="transactionTitle"
+                id="titleInput"
                 className="form-input-element"
                 placeholder="TITLE"
               />
-              <label htmlFor="transactionAmount" className="form-label-styles">
+              <label htmlFor="amountInput" className="form-label-styles">
                 AMOUNT
               </label>
               <input
                 value={amount}
                 onChange={this.onAddAmount}
                 type="text"
-                id="transactionAmount"
+                id="amountInput"
                 className="form-input-element"
                 placeholder="AMOUNT"
               />
@@ -126,7 +120,7 @@ class MoneyManager extends Component {
               <select
                 value={transactionType}
                 onChange={this.onAddType}
-                id="transactionType"
+                id="optionId"
                 className="select-dropdown-element"
               >
                 <option
@@ -155,15 +149,19 @@ class MoneyManager extends Component {
               <p className="history-top-heads-styles">Amount</p>
               <p className="history-top-heads-styles">Type</p>
             </div>
-            <ul className="history-ul-container">
-              {transactionsList.map(eachTransaction => (
-                <TransactionItem
-                  key={eachTransaction.id}
-                  transactionDetails={eachTransaction}
-                  deleteTransaction={this.deleteTransaction}
-                />
-              ))}
-            </ul>
+            {transactionsList.length > 0 ? (
+              <ul className="history-ul-container">
+                {transactionsList.map(eachTransaction => (
+                  <TransactionItem
+                    key={eachTransaction.id}
+                    transactionDetails={eachTransaction}
+                    deleteTransaction={this.deleteTransaction}
+                  />
+                ))}
+              </ul>
+            ) : (
+              ''
+            )}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const MoneyDetails = props => {
   let totalExpenditure = 0
 
   transactionsList.forEach(transaction => {
-    if (transaction.transactionType === 'Income') {
+    if (transaction.transactionType === 'INCOME') {
       totalIncome += transaction.amount
     } else {
       totalExpenditure += transaction.amount

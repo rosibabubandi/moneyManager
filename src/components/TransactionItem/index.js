@@ -9,10 +9,12 @@ const TransactionItem = props => {
   }
 
   return (
-    <li className="transaction-li-container">
+    <li className="transaction-li-container" key={id}>
       <p className="transaction-details-text">{title}</p>
       <p className="transaction-details-text">{amount}</p>
-      <p className="transaction-details-text">{transactionType}</p>
+      <p className="transaction-details-text">
+        {transactionType === 'INCOME' ? 'Income' : 'Expenses'}
+      </p>
       <button
         className="delete-button"
         type="button"
